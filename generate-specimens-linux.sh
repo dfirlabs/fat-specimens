@@ -58,6 +58,9 @@ create_test_file_entries()
 	# FILENAME=`printf "l%.0s" {1..256}`
 	# touch "${MOUNT_POINT}/testdir1/${FILENAME}"
 
+	# Create a file with a filename that contains a dot.
+	touch "${MOUNT_POINT}/testdir1/te.st3.txt"
+
 	# Create a file with a control code in the filename
 	# touch `printf "${MOUNT_POINT}/control_cod\x03"`
 	# touch: cannot touch 'control_cod'$'\003': Invalid argument
