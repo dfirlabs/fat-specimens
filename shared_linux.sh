@@ -60,6 +60,15 @@ create_test_file_entries()
 	# Create a file with a filename that contains a dot.
 	touch "${MOUNT_POINT}/testdir1/te.st3.txt"
 
+	# Create a file with a short filename with a space in the name.
+	touch "${MOUNT_POINT}/testdir1/te t4.txt"
+
+	# Create a file with a short filename with a space in the extension.
+	touch "${MOUNT_POINT}/testdir1/test5. xt"
+
+	# Create a file with a filename that contains a plus sign.
+	touch "${MOUNT_POINT}/testdir1/te+st6.txt"
+
 	# Create a file with a control code in the filename
 	# touch `printf "${MOUNT_POINT}/control_cod\x03"`
 	# touch: cannot touch 'control_cod'$'\003': Invalid argument

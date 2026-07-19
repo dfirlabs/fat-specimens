@@ -180,7 +180,7 @@ if %errorlevel% neq 0 (
 del /q %diskpartscript%
 
 rem Give the system a bit of time to adjust
-timeout /t 1 > nul
+choice /t 1 /d y > nul
 
 ENDLOCAL
 exit /b 0
